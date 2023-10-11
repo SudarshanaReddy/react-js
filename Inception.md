@@ -14,8 +14,9 @@
 
 ### How to create elements in react
 
-* Use React.createElement("h1",{},"Hello World React"). Usd the object to give the attributes to teh h1 tag.
+* Use React.createElement("h1",{},"Hello World React"). Use the object to give the attributes to the h1 tag.
 * In order to create root - Use ReactDOM.createRoot(). 
+* React elements are basically objects.
 * React.createElement creates the react element and when render method is called it will be converted to html that browser understands.
 * If sibilings has to be created we need to pass array of children.
 * Root.render() - replaces the exisiting html where ever we are renderig the object. 
