@@ -8,7 +8,8 @@
 * It sets Access-Control-Allow-Orign : * - so that we do ot have the CORS issue.
 
 ### How to add react to the project?
-* We can use CDN links to add react library to the project.
+* We can use CDN links to add react library to the project - **it is not recommended.**
+* We have to use npm to install react ad react-dom into the node_modules folder, import react into the project.
 * Include the CDN link using script tag inside html.
 * We need to include react and react-dom cdn links. where react is the core library and react-dom is needed to manipulate the react dom (document object model).
 

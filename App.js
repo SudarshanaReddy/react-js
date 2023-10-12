@@ -1,23 +1,25 @@
-/**
- * <div id="parent">
- *    <div id="child">
- *      <h1> </h1>
- *    </div>
- * </div>
- * 
- * 
- * 
- * 
- */
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const parent = React.createElement("div", 
-        {id: "parent"}, 
-        React.createElement(
-            "div", 
-            {id: "child"}, 
-        [React.createElement("h1",{},"I am an h1 tag"), 
-        React.createElement("h2",{},"I am an h2 tag")]));
+const Title = () => (
+    <h1 id="heading">React Using JSX </h1>
+ );
+
+ //react element
+const title = (
+    <h1 id="heading">title element</h1>
+);
+
+ const value = 10000;
+
+//react functional compoent
+const HeadingComponent = () => (
+  <div id="container">
+    <h2>{title}</h2>
+    <h1 className='heading'>Functional Component</h1>
+  </div>
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(<HeadingComponent/>);
