@@ -45,5 +45,21 @@
 
       const [data] = useState([]);
    ```
+- useEffect will be called everytime when a component is rendered - if no dependency array is provided.
+- useEffect will be called only on the initial render - in case of empty dependency array is provided.
+- useEffect will be called everytime when the dependency array is changed.
+- Never create the hooks outside the functional component. 
+- Never create the hooks inside conditional statements, for loops,
+
+### Why react apps are fast
+
+React Uses
+
+ - Reconciliation algorithm. Also known as React Fiber.
+ - Virtual DOM - is an representation of actual DOM. It is basically a react object.
+ - Diff Algorithm - 
+ - Wheever a state variable changes - the whole component releate to state variable will be rendered.
+ - 
+
 
 
